@@ -27,6 +27,6 @@ class TestCommand extends Command
      */
     public function handle()
     {
-        Mail::to('yasinsarkar111@gmail.com')->send(new TestMail);
+        Mail::to('sajiba7654@gmail.com')->send(new TestMail);
     }
 }

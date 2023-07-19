@@ -12,11 +12,11 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        $schedule->call(function () {
-            info('Hello World');
-        })->everyMinute()->runInBackground();
+        // $schedule->call(function () {
+        //     info('Hello World');
+        // })->everyMinute()->runInBackground();
 
-        $schedule->command('app:test-command')->everyMinute()->runInBackground();
+        $schedule->command('app:test-command')->everyMinute();
     }
 
     /**
